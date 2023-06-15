@@ -1,9 +1,14 @@
 import React from 'react';
 
-import Home from './pages/Home/Home';
+import Layout from './Layout';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
-  return <Home />;
+  return (
+    <Layout>
+      <Dashboard />
+    </Layout>
+  );
 }
 
 export default App;
