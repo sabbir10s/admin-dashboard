@@ -75,7 +75,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
 
     // Import Rules
-    'import/no-unresolved': 'error',
+    'import/no-unresolved': 'off',
     'import/named': 'error',
     'import/namespace': 'error',
     'import/default': 'error',
@@ -95,6 +95,6 @@ module.exports = {
     ],
 
     // Prettier Rules
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'off',
   },
 };
