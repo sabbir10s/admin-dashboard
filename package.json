@@ -6,17 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:check": "eslint --ignore-path .eslintignore --ext js,jsx",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "prettier:check": "prettier --ignore-path .gitignore --write \"src/**/*.{js,jsx}\"",
+    "prettier:fix": "prettier --write .",
+    "lint-prettier": "npm run lint:check && npm run prettier:check",
     "prepare": "husky install",
     "lint-staged": "npx lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "npm run lint",
-      "npm run format"
-    ]
+    "src/**/*.{js,jsx}": "npm run lint-prettier"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -38,5 +38,15 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "vite": "^4.3.9"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "css",
+        "extensions": [
+          ".css"
+        ]
+      }
+    ]
   }
 }
