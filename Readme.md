@@ -23,3 +23,4 @@ To get started with the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/nur165024/admin-dashboard-tailwind-react-vite`
 2. Install dependencies: `npm install`
 3. To run the project: `npm run dev`
+4. To run live demo: https://admin-dashboard-tailwind-react-vite.vercel.app/
