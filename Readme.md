@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-This project is an admin dashboard built with React and Tailwind CSS. It provides a user interface for managing administrative tasks.
+This project is an admin dashboard built with React and Tailwind CSS.
 
 ## File Structure
 
