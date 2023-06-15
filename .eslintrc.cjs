@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-undef */
+
 module.exports = {
   root: true,
   env: {

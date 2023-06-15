@@ -2,7 +2,7 @@ function App() {
   return (
     <header>
       <section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
         blanditiis dolor ea magnam minus veritatis voluptatem facilis eligendi
         sit, dicta odio delectus itaque repellendus officiis aspernatur sint
         alias corporis, obcaecati quo, deserunt hic tenetur eum. Eius officia,
