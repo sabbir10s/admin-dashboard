@@ -1,22 +1,22 @@
 import React from 'react';
 
+import Sidebar from '../components/common/Sidebar/Sidebar';
+import Header from '../components/shared/Header/Header';
+
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <header>
-        {' '}
-        <h1 className="text-3xl font-bold underline bg-primary-400 text-white py-2">
-          Header!
-        </h1>
+        <Header />
       </header>
       <main>
-        <div className="layout flex w-full">
-          <aside className="sidebar bg-primary-100 p-10 w-full">
+        <div className="flex">
+          <aside>
             {/* Add sidebar content */}
-            Sidebar
+            <Sidebar />
           </aside>
 
-          <main className="main-content bg-primary-400 text-white p-10 w-full">
+          <main>
             {/* Add main content */}
             {children}
           </main>
@@ -24,9 +24,7 @@ const Layout = ({ children }) => {
       </main>
       <footer>
         {' '}
-        <h1 className="text-3xl font-bold underline bg-primary-600 text-white py-2">
-          Hello Footer !
-        </h1>
+        <h1>Hello Footer !</h1>
       </footer>
     </React.Fragment>
   );
