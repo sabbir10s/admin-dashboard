@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
 import FileUpload from '../../components/ui/FileUpload/InputPhoto';
 import { default as InputField } from '../../components/ui/Input/InputField';
+import Select from '../../components/ui/Select/Select';
 import TextArea from '../../components/ui/TextArea/TextArea';
 
 const Form = () => {
@@ -39,6 +40,7 @@ const Form = () => {
           <InputField name="email" label="Email" type="email" />
           <InputField name="mobile" label="Mobile" type="number" />
         </div>
+        <Select />
         <TextArea cols={10} rows={5} label="Message" />
         <FileUpload label="File Upload" />
         <div className="space-x-4">
