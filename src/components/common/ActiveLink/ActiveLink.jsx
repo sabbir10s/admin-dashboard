@@ -6,8 +6,10 @@ function ActiveLink({ children, to, ...props }) {
   const match = useMatch({ path: resolved.pathname, end: true });
   return (
     <Link
-      className={`text-slate-500 font-normal hover:text-primary-500 ${
-        match && 'text-primary-500'
+      className={` font-normal ${
+        match
+          ? ' text-primary-600 dark:text-white'
+          : 'text-gray-400 dark:hover:text-white'
       }`}
       to={to}
       {...props}

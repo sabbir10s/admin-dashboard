@@ -44,7 +44,7 @@ const Navbar = ({ handleSidebar }) => {
     }
   }, [isDarkMode]);
   return (
-    <div className="p-6 bg-[#f9fafb] flex justify-between">
+    <div className="p-6 flex justify-between">
       <button className="hidden lg:block" onClick={handleSidebar}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const Navbar = ({ handleSidebar }) => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-6 h-6 text-primary-500 dark:text-white"
         >
           <path
             strokeLinecap="round"
@@ -71,7 +71,7 @@ const Navbar = ({ handleSidebar }) => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-6 h-6 text-primary-500 dark:text-white"
         >
           <path
             strokeLinecap="round"
@@ -89,7 +89,7 @@ const Navbar = ({ handleSidebar }) => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 text-white"
           >
             <path
               strokeLinecap="round"
@@ -104,7 +104,7 @@ const Navbar = ({ handleSidebar }) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 text-primary-600"
           >
             <path
               strokeLinecap="round"

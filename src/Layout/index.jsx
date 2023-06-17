@@ -10,7 +10,7 @@ const Layout = () => {
     setSidebar(!sidebar);
   };
   return (
-    <main className="flex bg-[#f9fafb]">
+    <main className="flex bg-[#f9fafb] dark:bg-primary-900">
       {sidebar && (
         <div className="w-72 h-screen hidden lg:block">
           <Sidebar />
