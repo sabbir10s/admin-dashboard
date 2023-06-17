@@ -1,32 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import Sidebar from '../components/common/Sidebar/Sidebar';
-import Header from '../components/shared/Header/Header';
+import Navbar from '../components/shared/Navbar/Navbar';
+import Sidebar from '../components/shared/Sidebar/Sidebar';
 
 const Layout = ({ children }) => {
+  const [sidebar, setSidebar] = useState(true);
+  const handleSidebar = () => {
+    setSidebar(!sidebar);
+  };
   return (
-    <React.Fragment>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <div className="flex">
-          <aside>
-            {/* Add sidebar content */}
-            <Sidebar />
-          </aside>
-
-          <main>
-            {/* Add main content */}
-            {children}
-          </main>
+    <main className="flex">
+      {sidebar && (
+        <div className="w-72 bg-white h-screen hidden lg:block">
+          <Sidebar />
         </div>
-      </main>
-      <footer>
-        {' '}
-        <h1>Hello Footer !</h1>
-      </footer>
-    </React.Fragment>
+      )}
+      <div className="w-full">
+        <Navbar handleSidebar={handleSidebar} />
+        <main className="bg-[#f9fafb] shadow w-full p-6">{children}</main>
+      </div>
+    </main>
   );
 };
 
