@@ -34,14 +34,34 @@ const Form = () => {
             placeholder="First Name"
             required={true}
           />
-          <InputField name="lastName" label="Last Name" type="text" />
+          <InputField
+            name="lastName"
+            label="Last Name"
+            type="text"
+            placeholder="Last Name"
+          />
         </div>
         <div className="grid grid-cols-2 gap-5">
-          <InputField name="email" label="Email" type="email" />
-          <InputField name="mobile" label="Mobile" type="number" />
+          <InputField
+            name="email"
+            label="Email"
+            type="email"
+            placeholder="Email"
+          />
+          <InputField
+            name="mobile"
+            label="Mobile"
+            type="tel"
+            placeholder="Phone"
+          />
         </div>
         <Select />
-        <TextArea cols={10} rows={5} label="Message" />
+        <TextArea
+          cols={10}
+          rows={5}
+          label="Message"
+          placeholder="Write your message"
+        />
         <FileUpload label="File Upload" />
         <div className="space-x-4">
           <ButtonFill title="Submit" />
