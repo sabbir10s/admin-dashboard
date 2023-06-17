@@ -19,7 +19,7 @@ const TextArea = ({ label, name, placeholder, required, cols, rows }) => {
           rows={rows}
           placeholder={placeholder}
           required={required}
-          className="block w-full rounded-md border-[1px] border-gray-300 dark:border-gray-500 dark:focus:border-gray-300 py-1.5 px-2 dark:text-white bg-[#f4f5f7] dark:bg-[#24262d] focus:bg-white placeholder:text-gray-400 sm:text-sm sm:leading-6 outline-none duration-300"
+          className="block w-full rounded-md border-[1px] border-gray-100 dark:border-gray-700 dark:focus:border-gray-300 p-3 dark:text-white bg-[#f4f5f7] dark:bg-[#24262d] focus:bg-white placeholder:text-gray-400 sm:text-sm sm:leading-6 outline-none duration-300"
         ></textarea>
       </div>
     </div>
