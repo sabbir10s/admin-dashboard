@@ -10,10 +10,10 @@ const Navbar = ({ handleSidebar }) => {
     setMobileSidebar(false);
   };
 
+  // dark mode
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // Get the theme value from localStorage on component mount
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme === 'dark') {
@@ -44,7 +44,7 @@ const Navbar = ({ handleSidebar }) => {
     }
   }, [isDarkMode]);
   return (
-    <div className="p-6 bg-white flex justify-between">
+    <div className="p-6 bg-[#f9fafb] flex justify-between">
       <button className="hidden lg:block" onClick={handleSidebar}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

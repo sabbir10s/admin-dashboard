@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../../assets/images/logo.jpeg';
+import logo from '../../../assets/images/logo-removebg-preview.png';
 import ActiveLink from '../../common/ActiveLink/ActiveLink';
 
 const Sidebar = ({ handleMobileSidebar }) => {
@@ -26,12 +26,15 @@ const Sidebar = ({ handleMobileSidebar }) => {
         </svg>
       </button>
       <img className="w-20" src={logo} alt="" />
-      <ul className="mt-8 space-y-1">
+      <ul className="mt-8 space-y-2">
         <li>
           <ActiveLink to="/">Overview</ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/product">Product</ActiveLink>
+          <ActiveLink to="/form">Form</ActiveLink>
+        </li>
+        <li>
+          <ActiveLink to="/table">Table</ActiveLink>
         </li>
       </ul>
     </div>
