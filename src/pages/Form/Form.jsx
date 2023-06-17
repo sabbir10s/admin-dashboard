@@ -16,13 +16,13 @@ const Form = () => {
   console.log(formData);
   return (
     <div>
-      <h2 className="text-base font-semibold leading-7 text-gray-900">
-        Personal Information
+      <h2 className="text-xl font-semibold leading-7 text-primary-600">
+        Form Design
       </h2>
       <p className="mt-1 text-sm leading-6 text-gray-600">
-        Use a permanent address where you can receive mail.
+        All off our form components
       </p>
-      <form className="mt-4" onSubmit={handleSubmit}>
+      <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-5">
           <InputField
             name="firstName"
@@ -33,7 +33,7 @@ const Form = () => {
           <InputField name="lastName" label="Last Name" type="text" />
         </div>
         <InputField name="email" label="Email" type="email" />
-        <div className="mt-4 space-x-4">
+        <div className="space-x-4">
           <ButtonFill title="Submit" />
           <ButtonOutline title="Cancel" />
         </div>
