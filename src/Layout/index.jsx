@@ -1,34 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
-const Layout = ({ children }) => {
+import Navbar from '../components/shared/Navbar/Navbar';
+import Sidebar from '../components/shared/Sidebar/Sidebar';
+
+const Layout = () => {
+  const [sidebar, setSidebar] = useState(true);
+  const handleSidebar = () => {
+    setSidebar(!sidebar);
+  };
   return (
-    <React.Fragment>
-      <header>
-        {' '}
-        <h1 className="text-3xl font-bold underline bg-primary-400 text-white py-2">
-          Header!
-        </h1>
-      </header>
-      <main>
-        <div className="layout flex w-full">
-          <aside className="sidebar bg-primary-100 p-10 w-full">
-            {/* Add sidebar content */}
-            Sidebar
-          </aside>
-
-          <main className="main-content bg-primary-400 text-white p-10 w-full">
-            {/* Add main content */}
-            {children}
-          </main>
+    <main className="flex bg-[#f9fafb] dark:bg-[#1a1c23]">
+      {sidebar && (
+        <div className="w-72 h-screen hidden lg:block">
+          <Sidebar />
         </div>
-      </main>
-      <footer>
-        {' '}
-        <h1 className="text-3xl font-bold underline bg-primary-600 text-white py-2">
-          Hello Footer !
-        </h1>
-      </footer>
-    </React.Fragment>
+      )}
+      <div className="w-full">
+        <Navbar handleSidebar={handleSidebar} />
+        <main className="bg-white dark:bg-[#121317] shadow w-full p-6 min-h-screen rounded-lg">
+          <Outlet />
+        </main>
+      </div>
+    </main>
   );
 };
 
