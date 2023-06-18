@@ -76,11 +76,11 @@ const Form = () => {
         </div>
         <div>
           <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white ">
-            Radio{' '}
+            Radio
           </h2>
-          <Radio label="Everything" />
-          <Radio label="Same as email" />
-          <Radio label="No push notifications" />
+          <Radio label="Everything" name="1" />
+          <Radio label="Same as email" name="1" />
+          <Radio label="No push notifications" name="1" />
         </div>
 
         <div>
