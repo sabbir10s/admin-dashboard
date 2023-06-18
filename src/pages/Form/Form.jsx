@@ -6,6 +6,7 @@ import { default as InputField } from '../../components/ui/Input/InputField';
 import Radio from '../../components/ui/Radio/Radio';
 import Select from '../../components/ui/Select/Select';
 import TextArea from '../../components/ui/TextArea/TextArea';
+import Toggle from '../../components/ui/Toggle/Toggle';
 
 const Form = () => {
   const [formData, setFormData] = useState();
@@ -80,6 +81,11 @@ const Form = () => {
           <Radio label="Everything" />
           <Radio label="Same as email" />
           <Radio label="No push notifications" />
+        </div>
+
+        <div>
+          <h2 className="uppercase font-bold my-4 block">Toggle switch</h2>
+          <Toggle />
         </div>
         <div className="space-x-4">
           <ButtonFill title="Submit" />

@@ -36,6 +36,9 @@ const Sidebar = ({ handleMobileSidebar }) => {
         <li>
           <ActiveLink to="/table">Table</ActiveLink>
         </li>
+        <li>
+          <ActiveLink to="/error">Error</ActiveLink>
+        </li>
       </ul>
     </div>
   );
