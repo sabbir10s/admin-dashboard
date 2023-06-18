@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
 import Checkbox from '../../components/ui/Checkbox/Checkbox';
-import FileUpload from '../../components/ui/FileUpload/InputPhoto';
 import { default as InputField } from '../../components/ui/Input/InputField';
+import Radio from '../../components/ui/Radio/Radio';
 import Select from '../../components/ui/Select/Select';
 import TextArea from '../../components/ui/TextArea/TextArea';
 
@@ -73,7 +73,14 @@ const Form = () => {
             <Checkbox label="Offers" />
           </div>
         </div>
-        <FileUpload label="File Upload" />
+        <div>
+          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white ">
+            Radio{' '}
+          </h2>
+          <Radio label="Everything" />
+          <Radio label="Same as email" />
+          <Radio label="No push notifications" />
+        </div>
         <div className="space-x-4">
           <ButtonFill title="Submit" />
           <ButtonOutline title="Cancel" />
