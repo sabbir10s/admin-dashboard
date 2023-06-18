@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
+import Checkbox from '../../components/ui/Checkbox/Checkbox';
 import FileUpload from '../../components/ui/FileUpload/InputPhoto';
 import { default as InputField } from '../../components/ui/Input/InputField';
 import Select from '../../components/ui/Select/Select';
@@ -62,6 +63,16 @@ const Form = () => {
           label="Message"
           placeholder="Write your message"
         />
+        <div className=" space-y-2 ">
+          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white ">
+            Checkbox
+          </h2>
+          <div className="space-y-1">
+            <Checkbox label="Comments" />
+            <Checkbox label="Candidates" />
+            <Checkbox label="Offers" />
+          </div>
+        </div>
         <FileUpload label="File Upload" />
         <div className="space-x-4">
           <ButtonFill title="Submit" />
