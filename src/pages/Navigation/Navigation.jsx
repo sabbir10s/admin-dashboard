@@ -3,8 +3,10 @@ import React from 'react';
 import NavCenter from '../../components/ui/Navigation/AllNavbar/NavCenter';
 import NavLeft from '../../components/ui/Navigation/AllNavbar/NavLeft';
 import NavRight from '../../components/ui/Navigation/AllNavbar/NavRight';
+import BreadcrumbOne from '../../components/ui/Navigation/Breadcrumb/BreadcrumbOne';
 import PaginationOne from '../../components/ui/Navigation/Pagination/PaginationOne';
 import PaginationTwo from '../../components/ui/Navigation/Pagination/PaginationTwo';
+import TabOne from '../../components/ui/Navigation/Tabs/TabOne';
 
 const Navigation = () => {
   return (
@@ -27,6 +29,11 @@ const Navigation = () => {
       {/* All Pagination */}
       <PaginationOne />
       <PaginationTwo />
+
+      {/* Tabs */}
+      <TabOne />
+      {/* BreadCrumb */}
+      <BreadcrumbOne />
     </div>
   );
 };
