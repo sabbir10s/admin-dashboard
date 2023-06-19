@@ -65,7 +65,7 @@ const Form = () => {
           placeholder="Write your message"
         />
         <div className=" space-y-2 ">
-          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white ">
+          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
             Checkbox
           </h2>
           <div className="space-y-1">
@@ -74,8 +74,8 @@ const Form = () => {
             <Checkbox label="Offers" />
           </div>
         </div>
-        <div>
-          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white ">
+        <div className="space-y-2">
+          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
             Radio
           </h2>
           <Radio label="Everything" name="1" />
@@ -84,7 +84,9 @@ const Form = () => {
         </div>
 
         <div>
-          <h2 className="uppercase font-bold my-4 block">Toggle switch</h2>
+          <h2 className="uppercase font-bold my-4 block text-gray-700 dark:text-white">
+            Toggle switch
+          </h2>
           <Toggle />
         </div>
         <div className="space-x-4">

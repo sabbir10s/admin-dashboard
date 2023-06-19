@@ -5,6 +5,7 @@ const ErrorPage = lazy(() => import('../pages/ErrorPage'));
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
 const Table = lazy(() => import('../pages/Table/Table'));
 const Form = lazy(() => import('../pages/Form/Form'));
+const Drawer = lazy(() => import('../pages/Drawer/Drawer'));
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/form',
         element: <Form />,
+      },
+      {
+        path: '/drawer',
+        element: <Drawer />,
       },
     ],
   },

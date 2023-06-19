@@ -34,6 +34,9 @@ const Sidebar = ({ handleMobileSidebar }) => {
           <ActiveLink to="/form">Form</ActiveLink>
         </li>
         <li>
+          <ActiveLink to="/drawer">Drawer</ActiveLink>
+        </li>
+        <li>
           <ActiveLink to="/table">Table</ActiveLink>
         </li>
         <li>
