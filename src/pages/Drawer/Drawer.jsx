@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Alert from '../../components/ui/Alret/Alret';
+import Alert from '../../components/ui/Drawer/Alret/Alret';
 
 const Drawer = () => {
   return (

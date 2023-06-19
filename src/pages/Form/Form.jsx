@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
-import Checkbox from '../../components/ui/Checkbox/Checkbox';
-import { default as InputField } from '../../components/ui/Input/InputField';
-import Radio from '../../components/ui/Radio/Radio';
-import Select from '../../components/ui/Select/Select';
-import TextArea from '../../components/ui/TextArea/TextArea';
-import Toggle from '../../components/ui/Toggle/Toggle';
+import Checkbox from '../../components/ui/Form/Checkbox/Checkbox';
+import InputField from '../../components/ui/Form/InputField/InputField';
+import Radio from '../../components/ui/Form/Radio/Radio';
+import Select from '../../components/ui/Form/Select/Select';
+import TextArea from '../../components/ui/Form/TextArea/TextArea';
+import Toggle from '../../components/ui/Form/Toggle/Toggle';
+// import TextArea from '../../components/ui/Form/TextArea/TextArea';
+// import Toggle from '../../components/ui/Form/Toggle/Toggle';
+// import InputField from '../../components/ui/InputField/InputField';
 
 const Form = () => {
   const [formData, setFormData] = useState();
