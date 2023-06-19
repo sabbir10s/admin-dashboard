@@ -46,6 +46,9 @@ const Sidebar = ({ handleMobileSidebar }) => {
           <ActiveLink to="/navigation">Navigation</ActiveLink>
         </li>
         <li>
+          <ActiveLink to="/pricing">Pricing</ActiveLink>
+        </li>
+        <li>
           <ActiveLink to="/error">Error</ActiveLink>
         </li>
       </ul>

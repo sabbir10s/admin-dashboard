@@ -1,7 +1,6 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import Navigation from '../pages/Navigation/Navigation';
 const Layout = lazy(() => import('../Layout'));
 const ErrorPage = lazy(() => import('../pages/ErrorPage'));
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
@@ -9,6 +8,8 @@ const Table = lazy(() => import('../pages/Table/Table'));
 const Form = lazy(() => import('../pages/Form/Form'));
 const Drawer = lazy(() => import('../pages/Drawer/Drawer'));
 const Elements = lazy(() => import('../pages/Elements/Elements'));
+const Navigation = lazy(() => import('../pages/Navigation/Navigation'));
+const Pricing = lazy(() => import('../pages/Pricing/Pricing'));
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: '/navigation',
         element: <Navigation />,
+      },
+      {
+        path: '/pricing',
+        element: <Pricing />,
       },
     ],
   },
