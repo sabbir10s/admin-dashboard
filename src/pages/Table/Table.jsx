@@ -1,9 +1,11 @@
 import React from 'react';
 
+import TableCheckbox from '../../components/ui/Table/TableCheckbox';
+
 const Table = () => {
   return (
     <div>
-      <p>Table</p>
+      <TableCheckbox />
     </div>
   );
 };

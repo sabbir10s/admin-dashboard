@@ -22,6 +22,19 @@ const Form = () => {
   };
   // eslint-disable-next-line no-console
   console.log(formData);
+
+  const options = [
+    { value: 'option1', label: 'Option 1' },
+    { value: 'option2', label: 'Option 2' },
+    { value: 'option3', label: 'Option 3' },
+  ];
+
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleSelectChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <div>
       <h2 className="text-xl font-semibold leading-7 text-primary-600">
@@ -60,7 +73,14 @@ const Form = () => {
             placeholder="Phone"
           />
         </div>
-        <Select />
+        <div>
+          <Select
+            options={options}
+            value={selectedOption}
+            onChange={handleSelectChange}
+          />
+        </div>
+
         <TextArea
           cols={10}
           rows={5}
