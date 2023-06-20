@@ -5,11 +5,9 @@ import Checkbox from '../../components/ui/Form/Checkbox/Checkbox';
 import InputField from '../../components/ui/Form/InputField/InputField';
 import Radio from '../../components/ui/Form/Radio/Radio';
 import Select from '../../components/ui/Form/Select/Select';
+import SelectWithImg from '../../components/ui/Form/SelectWithImg/SelectWithImg';
 import TextArea from '../../components/ui/Form/TextArea/TextArea';
 import Toggle from '../../components/ui/Form/Toggle/Toggle';
-// import TextArea from '../../components/ui/Form/TextArea/TextArea';
-// import Toggle from '../../components/ui/Form/Toggle/Toggle';
-// import InputField from '../../components/ui/InputField/InputField';
 
 const Form = () => {
   const [formData, setFormData] = useState();
@@ -73,13 +71,14 @@ const Form = () => {
             placeholder="Phone"
           />
         </div>
-        <div>
-          <Select
-            options={options}
-            value={selectedOption}
-            onChange={handleSelectChange}
-          />
-        </div>
+        {/* select options */}
+        <Select
+          options={options}
+          value={selectedOption}
+          onChange={handleSelectChange}
+        />
+
+        <SelectWithImg />
 
         <TextArea
           cols={10}
