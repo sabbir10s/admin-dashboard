@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
-import FileUpload from '../../components/ui/FileUpload/InputPhoto';
-import { default as InputField } from '../../components/ui/Input/InputField';
-import Select from '../../components/ui/Select/Select';
-import TextArea from '../../components/ui/TextArea/TextArea';
+import Checkbox from '../../components/ui/Form/Checkbox/Checkbox';
+import FileUpload from '../../components/ui/Form/FileUpload/FileUpload';
+import InputField from '../../components/ui/Form/InputField/InputField';
+import Radio from '../../components/ui/Form/Radio/Radio';
+import Select from '../../components/ui/Form/Select/Select';
+import SelectWithImg from '../../components/ui/Form/SelectWithImg/SelectWithImg';
+import TextArea from '../../components/ui/Form/TextArea/TextArea';
+import Toggle from '../../components/ui/Form/Toggle/Toggle';
 
 const Form = () => {
   const [formData, setFormData] = useState();
@@ -17,6 +21,19 @@ const Form = () => {
   };
   // eslint-disable-next-line no-console
   console.log(formData);
+
+  const options = [
+    { value: 'option1', label: 'Option 1' },
+    { value: 'option2', label: 'Option 2' },
+    { value: 'option3', label: 'Option 3' },
+  ];
+
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleSelectChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <div>
       <h2 className="text-xl font-semibold leading-7 text-primary-600">
@@ -55,14 +72,48 @@ const Form = () => {
             placeholder="Phone"
           />
         </div>
-        <Select />
+        {/* select options */}
+        <Select
+          options={options}
+          value={selectedOption}
+          onChange={handleSelectChange}
+        />
+
+        <SelectWithImg />
+
         <TextArea
           cols={10}
           rows={5}
           label="Message"
           placeholder="Write your message"
         />
-        <FileUpload label="File Upload" />
+        <div className=" space-y-2 ">
+          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
+            Checkbox
+          </h2>
+          <div className="space-y-1">
+            <Checkbox label="Comments" />
+            <Checkbox label="Candidates" />
+            <Checkbox label="Offers" />
+          </div>
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
+            Radio
+          </h2>
+          <Radio label="Everything" name="1" />
+          <Radio label="Same as email" name="1" />
+          <Radio label="No push notifications" name="1" />
+        </div>
+
+        <div>
+          <h2 className="uppercase font-bold my-4 block text-gray-700 dark:text-white">
+            Toggle switch
+          </h2>
+          <Toggle />
+        </div>
+
+        <FileUpload />
         <div className="space-x-4">
           <ButtonFill title="Submit" />
           <ButtonOutline title="Cancel" />
