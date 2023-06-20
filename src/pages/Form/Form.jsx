@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
 import Checkbox from '../../components/ui/Form/Checkbox/Checkbox';
+import FileUpload from '../../components/ui/Form/FileUpload/FileUpload';
 import InputField from '../../components/ui/Form/InputField/InputField';
 import Radio from '../../components/ui/Form/Radio/Radio';
 import Select from '../../components/ui/Form/Select/Select';
@@ -111,6 +112,8 @@ const Form = () => {
           </h2>
           <Toggle />
         </div>
+
+        <FileUpload />
         <div className="space-x-4">
           <ButtonFill title="Submit" />
           <ButtonOutline title="Cancel" />
