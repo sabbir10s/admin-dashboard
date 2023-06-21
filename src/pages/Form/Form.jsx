@@ -9,6 +9,7 @@ import Select from '../../components/ui/Form/Select/Select';
 import SelectWithImg from '../../components/ui/Form/SelectWithImg/SelectWithImg';
 import TextArea from '../../components/ui/Form/TextArea/TextArea';
 import Toggle from '../../components/ui/Form/Toggle/Toggle';
+import Search from '../../components/ui/Search/Search';
 
 const Form = () => {
   const [formData, setFormData] = useState();
@@ -35,90 +36,100 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <h2 className="text-xl font-semibold leading-7 text-primary-600">
-        Form Design
-      </h2>
-      <p className="mt-1 text-sm leading-6 text-gray-600">
-        All off our form components
-      </p>
-      <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
-        <div className="grid grid-cols-2 gap-5">
-          <InputField
-            name="firstName"
-            label="First Name"
-            type="text"
-            placeholder="First Name"
-            required={true}
-          />
-          <InputField
-            name="lastName"
-            label="Last Name"
-            type="text"
-            placeholder="Last Name"
-          />
-        </div>
-        <div className="grid grid-cols-2 gap-5">
-          <InputField
-            name="email"
-            label="Email"
-            type="email"
-            placeholder="Email"
-          />
-          <InputField
-            name="mobile"
-            label="Mobile"
-            type="tel"
-            placeholder="Phone"
-          />
-        </div>
-        {/* select options */}
-        <Select
-          options={options}
-          value={selectedOption}
-          onChange={handleSelectChange}
-        />
+    <div className="space-y-10">
+      {/* Search */}
 
-        <SelectWithImg />
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold leading-7 text-primary-600">
+          Search
+        </h2>
+        <Search />
+      </div>
 
-        <TextArea
-          cols={10}
-          rows={5}
-          label="Message"
-          placeholder="Write your message"
-        />
-        <div className=" space-y-2 ">
-          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
-            Checkbox
-          </h2>
-          <div className="space-y-1">
-            <Checkbox label="Comments" />
-            <Checkbox label="Candidates" />
-            <Checkbox label="Offers" />
+      {/* Form */}
+
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold leading-7 text-primary-600">
+          Form
+        </h2>
+        <form className="space-y-4" onSubmit={handleSubmit}>
+          <div className="grid grid-cols-2 gap-5">
+            <InputField
+              name="firstName"
+              label="First Name"
+              type="text"
+              placeholder="First Name"
+              required={true}
+            />
+            <InputField
+              name="lastName"
+              label="Last Name"
+              type="text"
+              placeholder="Last Name"
+            />
           </div>
-        </div>
-        <div className="space-y-2">
-          <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
-            Radio
-          </h2>
-          <Radio label="Everything" name="1" />
-          <Radio label="Same as email" name="1" />
-          <Radio label="No push notifications" name="1" />
-        </div>
+          <div className="grid grid-cols-2 gap-5">
+            <InputField
+              name="email"
+              label="Email"
+              type="email"
+              placeholder="Email"
+            />
+            <InputField
+              name="mobile"
+              label="Mobile"
+              type="tel"
+              placeholder="Phone"
+            />
+          </div>
+          {/* select options */}
+          <Select
+            options={options}
+            value={selectedOption}
+            onChange={handleSelectChange}
+          />
 
-        <div>
-          <h2 className="uppercase font-bold my-4 block text-gray-700 dark:text-white">
-            Toggle switch
-          </h2>
-          <Toggle />
-        </div>
+          <SelectWithImg />
 
-        <FileUpload />
-        <div className="space-x-4">
-          <ButtonFill title="Submit" />
-          <ButtonOutline title="Cancel" />
-        </div>
-      </form>
+          <TextArea
+            cols={10}
+            rows={5}
+            label="Message"
+            placeholder="Write your message"
+          />
+          <div className=" space-y-2 ">
+            <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
+              Checkbox
+            </h2>
+            <div className="space-y-1">
+              <Checkbox label="Comments" />
+              <Checkbox label="Candidates" />
+              <Checkbox label="Offers" />
+            </div>
+          </div>
+          <div className="space-y-2">
+            <h2 className="text-sm font-medium leading-6 text-gray-700 dark:text-white">
+              Radio
+            </h2>
+            <Radio label="Everything" name="1" />
+            <Radio label="Same as email" name="1" />
+            <Radio label="No push notifications" name="1" />
+          </div>
+
+          <div>
+            <h2 className="uppercase font-bold my-4 block text-gray-700 dark:text-white">
+              Toggle switch
+            </h2>
+            <Toggle />
+          </div>
+
+          <FileUpload />
+          <div className="space-x-4">
+            <ButtonFill title="Submit" />
+            <ButtonOutline title="Cancel" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

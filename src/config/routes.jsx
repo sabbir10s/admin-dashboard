@@ -1,6 +1,9 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
+import Carts from '../pages/Carts/Carts';
+import Checkout from '../pages/Checkout/Checkout';
+
 const Layout = lazy(() => import('../Layout'));
 const ErrorPage = lazy(() => import('../pages/ErrorPage'));
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
@@ -10,6 +13,8 @@ const Drawer = lazy(() => import('../pages/Drawer/Drawer'));
 const Elements = lazy(() => import('../pages/Elements/Elements'));
 const Navigation = lazy(() => import('../pages/Navigation/Navigation'));
 const Pricing = lazy(() => import('../pages/Pricing/Pricing'));
+const ProductCard = lazy(() => import('../pages/ProductCard/ProductCard'));
+const Faq = lazy(() => import('../pages/Faq/Faq'));
 
 const router = createBrowserRouter([
   {
@@ -48,6 +53,22 @@ const router = createBrowserRouter([
       {
         path: '/pricing',
         element: <Pricing />,
+      },
+      {
+        path: '/productCard',
+        element: <ProductCard />,
+      },
+      {
+        path: '/checkout',
+        element: <Checkout />,
+      },
+      {
+        path: '/cart',
+        element: <Carts />,
+      },
+      {
+        path: '/faq',
+        element: <Faq />,
       },
     ],
   },
