@@ -1,6 +1,8 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
+import ProductCard from '../pages/ProductCard/ProductCard';
+
 const Layout = lazy(() => import('../Layout'));
 const ErrorPage = lazy(() => import('../pages/ErrorPage'));
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
@@ -48,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: '/pricing',
         element: <Pricing />,
+      },
+      {
+        path: '/productCard',
+        element: <ProductCard />,
       },
     ],
   },
