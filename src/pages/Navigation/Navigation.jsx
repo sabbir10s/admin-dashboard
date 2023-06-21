@@ -6,6 +6,9 @@ import NavRight from '../../components/ui/Navigation/AllNavbar/NavRight';
 import BreadcrumbOne from '../../components/ui/Navigation/Breadcrumb/BreadcrumbOne';
 import PaginationOne from '../../components/ui/Navigation/Pagination/PaginationOne';
 import PaginationTwo from '../../components/ui/Navigation/Pagination/PaginationTwo';
+import StepsOne from '../../components/ui/Navigation/Steps/StepsOne';
+import StepsThree from '../../components/ui/Navigation/Steps/StepsThree';
+import StepsTwo from '../../components/ui/Navigation/Steps/StepsTwo';
 import TabOne from '../../components/ui/Navigation/Tabs/TabOne';
 
 const Navigation = () => {
@@ -68,6 +71,16 @@ const Navigation = () => {
         </h2>
         <div className="space-y-14">
           <BreadcrumbOne />
+        </div>
+      </div>
+      <div className="space-y-6">
+        <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
+          Steps
+        </h2>
+        <div className="space-y-14">
+          <StepsOne />
+          <StepsTwo />
+          <StepsThree />
         </div>
       </div>
     </div>

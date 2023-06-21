@@ -12,12 +12,12 @@ const ProductCardThree = ({ productInfo }) => {
           <img
             className="peer absolute top-0 right-0 h-full w-full object-cover"
             src={image}
-            alt="product image"
+            alt="productImage"
           />
           <img
             className="peer peer-hover:right-0 absolute top-0 -right-96 h-full w-full object-cover transition-all delay-100 duration-1000 hover:right-0"
             src={imageTwo}
-            alt="product image"
+            alt="productImage"
           />
           <svg
             className="group-hover:animate-ping group-hover:opacity-30 peer-hover:opacity-0 pointer-events-none absolute inset-x-0 bottom-5 mx-auto text-3xl text-white transition-opacity"
