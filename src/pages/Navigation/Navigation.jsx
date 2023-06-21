@@ -10,30 +10,66 @@ import TabOne from '../../components/ui/Navigation/Tabs/TabOne';
 
 const Navigation = () => {
   return (
-    <div className=" space-y-8">
+    <div className=" space-y-14">
       {/* All Navbar */}
-      <div className="h-60 border dark:border-gray-500 p-4 space-y-4">
-        <h2 className="text-xl font-semibold dark:text-white">Left Aligned</h2>
-        <NavLeft />
-      </div>
-      <div className="h-60 border dark:border-gray-500 p-4 space-y-4">
-        <h2 className="text-xl font-semibold dark:text-white">
-          Center Aligned
+
+      <div className="space-y-6">
+        <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
+          Navbar
         </h2>
-        <NavCenter />
+        <div className="h-60 border dark:border-gray-500 p-4 space-y-4">
+          <h2 className="text-xl font-semibold dark:text-white">
+            Left Aligned
+          </h2>
+          <NavLeft />
+        </div>
+        <div className="h-60 border dark:border-gray-500 p-4 space-y-4">
+          <h2 className="text-xl font-semibold dark:text-white">
+            Center Aligned
+          </h2>
+          <NavCenter />
+        </div>
+        <div className="h-60 border dark:border-gray-500 p-4 space-y-4">
+          <h2 className="text-xl font-semibold dark:text-white">
+            Right Aligned
+          </h2>
+          <NavRight />
+        </div>
       </div>
-      <div className="h-60 border dark:border-gray-500 p-4 space-y-4">
-        <h2 className="text-xl font-semibold dark:text-white">Right Aligned</h2>
-        <NavRight />
-      </div>
+
       {/* All Pagination */}
-      <PaginationOne />
-      <PaginationTwo />
+
+      <div className="space-y-6">
+        <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
+          Pagination
+        </h2>
+        <div className="space-y-14">
+          <PaginationOne />
+          <PaginationTwo />
+        </div>
+      </div>
 
       {/* Tabs */}
-      <TabOne />
+
+      <div className="space-y-6">
+        <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
+          Tab
+        </h2>
+        <div className="space-y-14">
+          <TabOne />
+        </div>
+      </div>
+
       {/* BreadCrumb */}
-      <BreadcrumbOne />
+
+      <div className="space-y-6">
+        <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
+          Breadcrumb
+        </h2>
+        <div className="space-y-14">
+          <BreadcrumbOne />
+        </div>
+      </div>
     </div>
   );
 };
