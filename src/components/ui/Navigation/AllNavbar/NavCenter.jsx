@@ -85,20 +85,18 @@ const NavCenter = () => {
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
               <a
-                className="rounded-md bg-primary-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                className="block rounded-md bg-primary-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-primary-700"
                 href="/"
               >
                 Login
               </a>
 
-              <div className="hidden sm:flex">
-                <a
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary-600"
-                  href="/"
-                >
-                  Register
-                </a>
-              </div>
+              <a
+                className="hidden rounded-md px-5 py-2.5 text-sm font-medium bg-gray-100 dark:bg-transparent border dark:border-gray-400 dark:hover:border-gray-50  text-primary-600 dark:text-gray-400 dark:hover:text-gray-50 transition hover:text-primary-600/75 sm:block"
+                href="/"
+              >
+                Register
+              </a>
             </div>
 
             <div className="block md:hidden">
