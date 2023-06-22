@@ -42,13 +42,13 @@ const CartComponent = () => {
 
                           <div className="sm:order-1">
                             <div className="mx-auto flex h-8 items-stretch text-gray-600">
-                              <button className="flex items-center justify-center rounded-l-md bg-gray-200 px-4 transition hover:bg-black hover:text-white">
+                              <button className="flex items-center justify-center rounded-l-md bg-gray-200 dark:bg-gray-800/50 px-4 transition hover:bg-black hover:text-white">
                                 -
                               </button>
-                              <div className="flex w-full items-center justify-center bg-gray-100 px-4 text-xs uppercase transition">
+                              <div className="flex w-full items-center justify-center bg-gray-100 dark:bg-gray-600 dark:text-white px-4 text-xs uppercase transition">
                                 1
                               </div>
-                              <button className="flex items-center justify-center rounded-r-md bg-gray-200 px-4 transition hover:bg-black hover:text-white">
+                              <button className="flex items-center justify-center rounded-r-md bg-gray-200 dark:bg-gray-800/50 px-4 transition hover:bg-black hover:text-white">
                                 +
                               </button>
                             </div>
@@ -106,14 +106,14 @@ const CartComponent = () => {
                           </p>
 
                           <div className="sm:order-1">
-                            <div className="mx-auto flex h-8 items-stretch text-gray-600">
-                              <button className="flex items-center justify-center rounded-l-md bg-gray-200 px-4 transition hover:bg-black hover:text-white">
+                            <div className="mx-auto flex h-8 items-stretch text-gray-600 dark:text-gray-300">
+                              <button className="flex items-center justify-center rounded-l-md bg-gray-200 dark:bg-gray-800/50 px-4 transition hover:bg-black hover:text-white">
                                 -
                               </button>
-                              <div className="flex w-full items-center justify-center bg-gray-100 px-4 text-xs uppercase transition">
+                              <div className="flex w-full items-center justify-center bg-gray-100 dark:bg-gray-600 dark:text-white px-4 text-xs uppercase transition">
                                 1
                               </div>
-                              <button className="flex items-center justify-center rounded-r-md bg-gray-200 px-4 transition hover:bg-black hover:text-white">
+                              <button className="flex items-center justify-center rounded-r-md bg-gray-200 dark:bg-gray-800/50 px-4 transition hover:bg-black hover:text-white">
                                 +
                               </button>
                             </div>
