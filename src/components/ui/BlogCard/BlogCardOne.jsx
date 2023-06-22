@@ -16,7 +16,7 @@ const BlogCardOne = ({ blog }) => {
         <h1 className="font-bold text-[16px] md:text-[20px] lg:text-[24px] text-left group-hover:underline dark:text-gray-400 group-hover:text-primary-700 duration-300 transition ease-in">
           {blog_title}
         </h1>
-        <div className="my-[12px] h-[1px] bg-[#E9E9E9]"></div>
+        <div className="my-[12px] h-[1px] bg-gray-200 dark:bg-gray-500"></div>
         <div className="flex items-center justify-between text-[12px]">
           <button className="text-primary-600 font-semibold uppercase ">
             {category}
