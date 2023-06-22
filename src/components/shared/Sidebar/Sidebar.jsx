@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../../assets/images/logo-removebg-preview.png';
 import ActiveLink from '../../common/ActiveLink/ActiveLink';
@@ -25,7 +26,9 @@ const Sidebar = ({ handleMobileSidebar }) => {
           />
         </svg>
       </button>
-      <img className="w-20" src={logo} alt="" />
+      <Link to="/">
+        <img className="w-20" src={logo} alt="" />
+      </Link>
       <ul className="mt-8 space-y-2">
         <li>
           <ActiveLink to="/">Overview</ActiveLink>
@@ -56,6 +59,15 @@ const Sidebar = ({ handleMobileSidebar }) => {
         </li>
         <li>
           <ActiveLink to="/cart">Cart</ActiveLink>
+        </li>
+        <li>
+          <ActiveLink to="/blogCard">Blog Card</ActiveLink>
+        </li>
+        <li>
+          <ActiveLink to="/testimonials">Testimonials</ActiveLink>
+        </li>
+        <li>
+          <ActiveLink to="/cards">Cards</ActiveLink>
         </li>
         <li>
           <ActiveLink to="/faq">FAQ</ActiveLink>
