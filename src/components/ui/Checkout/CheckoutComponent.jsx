@@ -3,8 +3,11 @@ import React from 'react';
 const CheckoutComponent = () => {
   return (
     <div>
-      <div className="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
-        <a href="#s" className="text-2xl font-bold text-gray-800">
+      <div className="flex flex-col items-center border-b dark:border-gray-400 bg-white dark:bg-gray-700 py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
+        <a
+          href="#s"
+          className="text-2xl font-bold text-gray-800 dark:text-gray-200"
+        >
           sneekpeeks
         </a>
         <div className="mt-4 py-2 text-xs sm:mt-0 sm:ml-auto sm:text-base">
@@ -30,7 +33,9 @@ const CheckoutComponent = () => {
                     />
                   </svg>
                 </a>
-                <span className="font-semibold text-gray-900">Shop</span>
+                <span className="font-semibold text-gray-900 dark:text-gray-200">
+                  Shop
+                </span>
               </li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +58,9 @@ const CheckoutComponent = () => {
                 >
                   2
                 </a>
-                <span className="font-semibold text-gray-900">Shipping</span>
+                <span className="font-semibold text-gray-900 dark:text-gray-200">
+                  Shipping
+                </span>
               </li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,50 +83,58 @@ const CheckoutComponent = () => {
                 >
                   3
                 </a>
-                <span className="font-semibold text-gray-500">Payment</span>
+                <span className="font-semibold text-gray-500 dark:text-gray-400">
+                  Payment
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
+      <div className="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32 dark:bg-gray-900 pb-10">
         <div className="px-4 pt-8">
-          <p className="text-xl font-medium">Order Summary</p>
+          <p className="text-xl font-medium dark:text-gray-200">
+            Order Summary
+          </p>
           <p className="text-gray-400">
             Check your items. And select a suitable shipping method.
           </p>
-          <div className="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
-            <div className="flex flex-col rounded-lg bg-white sm:flex-row">
+          <div className="mt-8 space-y-3 rounded-lg border dark:border-gray-600 bg-white dark:bg-gray-900 px-2 py-4 sm:px-6">
+            <div className="flex flex-col rounded-lg bg-white dark:bg-gray-700 sm:flex-row">
               <img
                 className="m-2 h-24 w-28 rounded-md border object-cover object-center"
                 src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
               <div className="flex w-full flex-col px-4 py-4">
-                <span className="font-semibold">
+                <span className="font-semibold dark:text-gray-200">
                   Nike Air Max Pro 8888 - Super Light
                 </span>
                 <span className="float-right text-gray-400">42EU - 8.5US</span>
-                <p className="text-lg font-bold">$138.99</p>
+                <p className="text-lg font-bold dark:text-gray-200">$138.99</p>
               </div>
             </div>
-            <div className="flex flex-col rounded-lg bg-white sm:flex-row">
+            <div className="flex flex-col rounded-lg bg-white dark:bg-gray-700 sm:flex-row">
               <img
                 className="m-2 h-24 w-28 rounded-md border object-cover object-center"
                 src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
               <div className="flex w-full flex-col px-4 py-4">
-                <span className="font-semibold">
+                <span className="font-semibold dark:text-gray-200">
                   Nike Air Max Pro 8888 - Super Light
                 </span>
-                <span className="float-right text-gray-400">42EU - 8.5US</span>
-                <p className="mt-auto text-lg font-bold">$238.99</p>
+                <span className="float-right text-gray-400 ">42EU - 8.5US</span>
+                <p className="mt-auto text-lg font-bold dark:text-gray-200">
+                  $238.99
+                </p>
               </div>
             </div>
           </div>
 
-          <p className="mt-8 text-lg font-medium">Shipping Methods</p>
+          <p className="mt-8 text-lg font-medium dark:text-gray-200">
+            Shipping Methods
+          </p>
           <form className="mt-5 grid gap-6">
             <div className="relative">
               <input
@@ -129,9 +144,9 @@ const CheckoutComponent = () => {
                 name="radio"
                 checked={true}
               />
-              <span className="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
+              <span className="peer-checked:border-gray-700 dark:peer-checked:border-gray-400 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 dark:border-gray-500 bg-white"></span>
               <label
-                className="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
+                className="peer-checked:border-2 peer-checked:border-gray-50 peer-checked:bg-gray-50 dark:peer-checked:bg-gray-700 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
                 htmlFor="radio_1"
               >
                 <img
@@ -140,7 +155,9 @@ const CheckoutComponent = () => {
                   alt=""
                 />
                 <div className="ml-5">
-                  <span className="mt-2 font-semibold">Fedex Delivery</span>
+                  <span className="mt-2 font-semibold dark:text-gray-200">
+                    Fedex Delivery
+                  </span>
                   <p className="text-slate-500 text-sm leading-6">
                     Delivery: 2-4 Days
                   </p>
@@ -155,9 +172,9 @@ const CheckoutComponent = () => {
                 name="radio"
                 checked={true}
               />
-              <span className="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
+              <span className="peer-checked:border-gray-700 dark:peer-checked:border-gray-400 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
               <label
-                className="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
+                className="peer-checked:border-2 peer-checked:border-gray-50 peer-checked:bg-gray-50 dark:peer-checked:bg-gray-700 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
                 htmlFor="radio_2"
               >
                 <img
@@ -166,7 +183,9 @@ const CheckoutComponent = () => {
                   alt=""
                 />
                 <div className="ml-5">
-                  <span className="mt-2 font-semibold">Fedex Delivery</span>
+                  <span className="mt-2 font-semibold dark:text-gray-200">
+                    Fedex Delivery
+                  </span>
                   <p className="text-slate-500 text-sm leading-6">
                     Delivery: 2-4 Days
                   </p>
@@ -175,7 +194,7 @@ const CheckoutComponent = () => {
             </div>
           </form>
         </div>
-        <div className="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
+        <div className="mt-10 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 px-4 pt-8 lg:mt-0">
           <p className="text-xl font-medium">Payment Details</p>
           <p className="text-gray-400">
             Complete your order by providing your payment details.
@@ -192,7 +211,7 @@ const CheckoutComponent = () => {
                 type="text"
                 id="email"
                 name="email"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-primary-500 dark:focus:border-gray-200 focus:ring-primary-500"
                 placeholder="your.email@gmail.com"
               />
               <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -223,7 +242,7 @@ const CheckoutComponent = () => {
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-primary-500 dark:focus:border-gray-200 focus:ring-primary-500"
                 placeholder="Your full name here"
               />
               <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -255,7 +274,7 @@ const CheckoutComponent = () => {
                   type="text"
                   id="card-no"
                   name="card-no"
-                  className="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                  className="w-full rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-primary-500 dark:focus:border-gray-200 focus:ring-primary-500"
                   placeholder="xxxx-xxxx-xxxx-xxxx"
                 />
                 <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -275,13 +294,13 @@ const CheckoutComponent = () => {
               <input
                 type="text"
                 name="credit-expiry"
-                className="w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 dark:focus:border-gray-200 focus:ring-blue-500"
                 placeholder="MM/YY"
               />
               <input
                 type="text"
                 name="credit-cvc"
-                className="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-1/6 flex-shrink-0 rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 dark:focus:border-gray-200 focus:ring-blue-500"
                 placeholder="CVC"
               />
             </div>
@@ -297,7 +316,7 @@ const CheckoutComponent = () => {
                   type="text"
                   id="billing-address"
                   name="billing-address"
-                  className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                  className="w-full rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 dark:focus:border-gray-200 focus:ring-blue-500"
                   placeholder="Street Address"
                 />
                 <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -311,34 +330,46 @@ const CheckoutComponent = () => {
               <select
                 type="text"
                 name="billing-state"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
               >
                 <option value="State">State</option>
               </select>
               <input
                 type="text"
                 name="billing-zip"
-                className="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="flex-shrink-0 rounded-md dark:bg-gray-700 border border-gray-200 dark:border-gray-500 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 dark:focus:border-gray-200 focus:ring-blue-500"
                 placeholder="ZIP"
               />
             </div>
 
             <div className="mt-6 border-t border-b py-2">
               <div className="flex items-center justify-between">
-                <p className="text-sm font-medium text-gray-900">Subtotal</p>
-                <p className="font-semibold text-gray-900">$399.00</p>
+                <p className="text-sm font-medium text-gray-900 dark:text-gray-200">
+                  Subtotal
+                </p>
+                <p className="font-semibold text-gray-900 dark:text-gray-200">
+                  $399.00
+                </p>
               </div>
               <div className="flex items-center justify-between">
-                <p className="text-sm font-medium text-gray-900">Shipping</p>
-                <p className="font-semibold text-gray-900">$8.00</p>
+                <p className="text-sm font-medium text-gray-900  dark:text-gray-200">
+                  Shipping
+                </p>
+                <p className="font-semibold text-gray-900 dark:text-gray-200">
+                  $8.00
+                </p>
               </div>
             </div>
             <div className="mt-6 flex items-center justify-between">
-              <p className="text-sm font-medium text-gray-900">Total</p>
-              <p className="text-2xl font-semibold text-gray-900">$408.00</p>
+              <p className="text-sm font-medium text-gray-900 dark:text-gray-200">
+                Total
+              </p>
+              <p className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
+                $408.00
+              </p>
             </div>
           </div>
-          <button className="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white">
+          <button className="mt-4 mb-8 w-full rounded-md bg-primary-600 hover:bg-primary-500 duration-300 px-6 py-3 font-medium text-white">
             Place Order
           </button>
         </div>
