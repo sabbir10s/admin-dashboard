@@ -47,5 +47,4 @@ const AnnouncementOne = () => {
     </div>
   );
 };
-
 export default AnnouncementOne;
