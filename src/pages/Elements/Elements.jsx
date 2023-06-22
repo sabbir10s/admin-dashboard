@@ -4,6 +4,7 @@ import Avatar from '../../components/ui/Elements/Avatar/Avatar';
 import Badges from '../../components/ui/Elements/Badges/Badges';
 import ButtonGroup from '../../components/ui/Elements/ButtonGroup/ButtonGroup';
 import DropDowns from '../../components/ui/Elements/Dropdowns/DropDowns';
+import QuantityInput from '../../components/ui/Elements/QuantityInput/QuantityInput';
 
 const Elements = () => {
   return (
@@ -13,6 +14,12 @@ const Elements = () => {
           Badges
         </h2>
         <Badges />
+      </div>
+      <div className="space-y-6">
+        <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
+          Quantity Input
+        </h2>
+        <QuantityInput />
       </div>
       <div className="space-y-6">
         <h2 className="text-gray-700 dark:text-gray-400 text-2xl font-semibold">
