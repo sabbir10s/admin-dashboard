@@ -54,40 +54,40 @@ const Dropdown = () => {
 
       {isOpen && (
         <div className="absolute right-0 z-10 mt-2 w-48 py-2 text-left text-sm text-gray-700 dark:text-gray-200 bg-white rounded-lg shadow dark:bg-gray-700">
-          <ul className="py-1">
-            <li onClick={handleOptionClick}>
+          <div className="py-1 flex flex-col text-start">
+            <button onClick={handleOptionClick}>
               <a
                 href="#s"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block text-start px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Dashboard
               </a>
-            </li>
-            <li onClick={handleOptionClick}>
+            </button>
+            <button onClick={handleOptionClick}>
               <a
                 href="#s"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block text-start px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Settings
               </a>
-            </li>
-            <li onClick={handleOptionClick}>
+            </button>
+            <button onClick={handleOptionClick}>
               <a
                 href="#s"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block text-start px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Earnings
               </a>
-            </li>
-            <li onClick={handleOptionClick}>
+            </button>
+            <button onClick={handleOptionClick}>
               <a
                 href="#s"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block text-start px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
                 Sign out
               </a>
-            </li>
-          </ul>
+            </button>
+          </div>
         </div>
       )}
     </div>
