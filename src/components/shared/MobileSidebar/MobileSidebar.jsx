@@ -16,10 +16,8 @@ const MobileSidebar = ({ visible, handleMobileSidebar }) => {
       id="container"
       className="lg:hidden z-30 fixed inset-0 bg-black bg-opacity-30"
     >
-      <div className="w-full md:w-72">
-        <div className="bg-white h-screen ">
-          <Sidebar handleMobileSidebar={handleMobileSidebar} />
-        </div>
+      <div className="bg-white w-full md:w-72 h-screen text-start">
+        <Sidebar handleMobileSidebar={handleMobileSidebar} />
       </div>
     </button>
   );

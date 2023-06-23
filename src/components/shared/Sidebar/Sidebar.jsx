@@ -31,49 +31,79 @@ const Sidebar = ({ handleMobileSidebar }) => {
       </Link>
       <ul className="mt-8 space-y-2">
         <li>
-          <ActiveLink to="/">Overview</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/">
+            Overview
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/form">Form</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/form">
+            Form
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/drawer">Drawer</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/drawer">
+            Drawer
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/table">Table</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/table">
+            Table
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/elements">Elements</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/elements">
+            Elements
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/navigation">Navigation</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/navigation">
+            Navigation
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/pricing">Pricing</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/pricing">
+            Pricing
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/productCard">Product Card</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/productCard">
+            Product Card
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/checkout">Checkout</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/checkout">
+            Checkout
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/cart">Cart</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/cart">
+            Cart
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/blogCard">Blog Card</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/blogCard">
+            Blog Card
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/testimonials">Testimonials</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/testimonials">
+            Testimonials
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/cards">Cards</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/card">
+            Card
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/faq">FAQ</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/faq">
+            FAQ
+          </ActiveLink>
         </li>
         <li>
-          <ActiveLink to="/error">Error</ActiveLink>
+          <ActiveLink onClick={handleMobileSidebar} to="/error">
+            Error
+          </ActiveLink>
         </li>
       </ul>
     </div>

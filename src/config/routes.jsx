@@ -1,12 +1,6 @@
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import BlogCard from '../pages/BlogCard/BlogCard';
-import Cards from '../pages/Cards/Cards';
-import Carts from '../pages/Carts/Carts';
-import Checkout from '../pages/Checkout/Checkout';
-import Testimonials from '../pages/Testimonials/Testimonials';
-
 const Layout = lazy(() => import('../Layout'));
 const ErrorPage = lazy(() => import('../pages/ErrorPage'));
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
@@ -18,6 +12,11 @@ const Navigation = lazy(() => import('../pages/Navigation/Navigation'));
 const Pricing = lazy(() => import('../pages/Pricing/Pricing'));
 const ProductCard = lazy(() => import('../pages/ProductCard/ProductCard'));
 const Faq = lazy(() => import('../pages/Faq/Faq'));
+const Testimonials = lazy(() => import('../pages/Testimonials/Testimonials'));
+const BlogCard = lazy(() => import('../pages/BlogCard/BlogCard'));
+const Card = lazy(() => import('../pages/Card/Card'));
+const Carts = lazy(() => import('../pages/Carts/Carts'));
+const Checkout = lazy(() => import('../pages/Checkout/Checkout'));
 
 const router = createBrowserRouter([
   {
@@ -78,8 +77,8 @@ const router = createBrowserRouter([
         element: <Testimonials />,
       },
       {
-        path: '/cards',
-        element: <Cards />,
+        path: '/card',
+        element: <Card />,
       },
       {
         path: '/faq',
