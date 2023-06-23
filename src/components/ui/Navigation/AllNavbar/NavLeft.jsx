@@ -3,27 +3,27 @@ import { Link } from 'react-router-dom';
 const navItems = [
   {
     name: 'About',
-    link: '/about',
+    link: '/',
   },
   {
     name: 'Careers',
-    link: '/careers',
+    link: '/',
   },
   {
     name: 'History',
-    link: '/history',
+    link: '/',
   },
   {
     name: 'Service',
-    link: '/service',
+    link: '/',
   },
   {
     name: 'Project',
-    link: '/project',
+    link: '/',
   },
   {
     name: 'Blog',
-    link: '/blog',
+    link: '/',
   },
 ];
 const NavLeft = () => {
@@ -127,7 +127,7 @@ const NavLeft = () => {
 
                 {isOpen && (
                   <div className="absolute right-0 z-10 mt-2 w-48 py-2 text-left text-sm text-gray-700 dark:text-gray-200 bg-white rounded-lg shadow dark:bg-gray-700">
-                    <div className="py-1 flex flex-col gap-1 text-start">
+                    <div className="py-1 flex flex-col gap-3 text-start">
                       {navItems.map((item) => (
                         <button key={item.name} onClick={handleOptionClick}>
                           <Link
