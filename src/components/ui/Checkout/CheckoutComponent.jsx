@@ -3,7 +3,7 @@ import React from 'react';
 const CheckoutComponent = () => {
   return (
     <div>
-      <div className="flex flex-col items-center border-b dark:border-gray-400 bg-white dark:bg-gray-700 py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
+      <div className="flex flex-col items-center border-b dark:border-gray-700 bg-white dark:bg-gray-900 py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
         <a
           href="#s"
           className="text-2xl font-bold text-gray-800 dark:text-gray-200"

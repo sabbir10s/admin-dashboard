@@ -5,7 +5,7 @@ const TestimonialOne = ({ testimonialInfo }) => {
   return (
     <div>
       <div>
-        <div className="flex flex-col rounded-xl  text-center shadow-lg border-t-4 border-primary-300 shadow-blue-200 dark:bg-gray-900">
+        <div className="flex flex-col rounded-xl  text-center shadow-md border-t-4 border-primary-300 shadow-gray-200 dark:shadow-gray-200/50 dark:bg-gray-900">
           <div className="flex flex-1 flex-col justify-between p-6 lg:py-7 lg:px-5">
             <div className="flex-1">
               <p className="border-primary-500 px-10 text-xl dark:text-gray-300 font-black">
