@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const TabOne = () => {
+  const [isActive, setIsActive] = useState('settings');
   return (
     <nav aria-label="Tabs">
       <ul className="flex border-b border-gray-100">
         <li className="flex-1">
-          <a className="relative block p-4" href="#d">
-            <span className="absolute inset-x-0 -bottom-px h-px w-full bg-primary-600"></span>
+          <a
+            onClick={() => setIsActive('settings')}
+            className="relative block p-4"
+            href="#settings"
+          >
+            <span
+              className={`absolute inset-x-0 -bottom-px h-px w-full ${
+                isActive === 'settings' ? 'bg-primary-600' : 'bg-transparent'
+              }`}
+            ></span>
 
             <div className="flex items-center justify-center gap-4">
               <svg
@@ -24,7 +33,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="text-sm font-medium text-gray-900">
+              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
                 {' '}
                 Settings{' '}
               </span>
@@ -33,7 +42,16 @@ const TabOne = () => {
         </li>
 
         <li className="flex-1">
-          <a className="relative block p-4" href="#dd">
+          <a
+            onClick={() => setIsActive('messages')}
+            className="relative block p-4"
+            href="#messages"
+          >
+            <span
+              className={`absolute inset-x-0 -bottom-px h-px w-full ${
+                isActive === 'messages' ? 'bg-primary-600' : 'bg-transparent'
+              }`}
+            ></span>
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +68,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="text-sm font-medium text-gray-900">
+              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
                 {' '}
                 Messages{' '}
               </span>
@@ -59,7 +77,16 @@ const TabOne = () => {
         </li>
 
         <li className="flex-1">
-          <a className="relative block p-4" href="#S">
+          <a
+            onClick={() => setIsActive('archive')}
+            className="relative block p-4"
+            href="#archive"
+          >
+            <span
+              className={`absolute inset-x-0 -bottom-px h-px w-full ${
+                isActive === 'archive' ? 'bg-primary-600' : 'bg-transparent'
+              }`}
+            ></span>
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +103,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="text-sm font-medium text-gray-900">
+              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
                 {' '}
                 Archive{' '}
               </span>
@@ -85,7 +112,18 @@ const TabOne = () => {
         </li>
 
         <li className="flex-1">
-          <a className="relative block p-4" href="#d">
+          <a
+            onClick={() => setIsActive('notifications')}
+            className="relative block p-4"
+            href="#notifications"
+          >
+            <span
+              className={`absolute inset-x-0 -bottom-px h-px w-full ${
+                isActive === 'notifications'
+                  ? 'bg-primary-600'
+                  : 'bg-transparent'
+              }`}
+            ></span>
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +140,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="text-sm font-medium text-gray-900">
+              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
                 {' '}
                 Notifications{' '}
               </span>
