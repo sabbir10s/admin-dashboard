@@ -125,8 +125,8 @@ const Form = () => {
 
           <FileUpload />
           <div className="space-x-4">
-            <ButtonFill title="Submit" />
-            <ButtonOutline title="Cancel" />
+            <ButtonFill>Submit</ButtonFill>
+            <ButtonOutline>Cancel</ButtonOutline>
           </div>
         </form>
       </div>

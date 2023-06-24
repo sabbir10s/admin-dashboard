@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-import SidebarBodyScrolling from '../../components/common/Sidebar/SidebarBodyScrolling';
-import SidebarOffCanvas from '../../components/common/Sidebar/SidebarOffCanvas';
-import SidElements from '../../components/common/Sidebar/SideElements';
+import SidebarBodyScrolling from '../../components/common/Drawer/SidebarBodyScrolling';
+import SidebarOffCanvas from '../../components/common/Drawer/SidebarOffCanvas';
+import SidElements from '../../components/common/Drawer/SideElements';
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
 import Alert from '../../components/ui/Drawer/Alret/Alret';
-
 const Drawer = () => {
   // Sidebar Off Canvas
   const [isOpen, setIsOpen] = useState(false);

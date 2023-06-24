@@ -91,7 +91,7 @@ const CheckoutComponent = () => {
           </div>
         </div>
       </div>
-      <div className="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32 dark:bg-gray-900 pb-10">
+      <div className="grid xl:grid-cols-2 sm:px-10 lg:px-20 xl:px-32 dark:bg-gray-900 pb-10">
         <div className="px-4 pt-8">
           <p className="text-xl font-medium dark:text-gray-200">
             Order Summary
