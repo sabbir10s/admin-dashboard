@@ -5,7 +5,13 @@ const TabOne = () => {
   return (
     <nav aria-label="Tabs">
       <ul className="flex border-b border-gray-100">
-        <li className="flex-1">
+        <li
+          className={`flex-1 ${
+            isActive === 'settings'
+              ? 'text-primary-600'
+              : 'text-gray-900 dark:text-gray-200'
+          }`}
+        >
           <a
             onClick={() => setIsActive('settings')}
             className="relative block p-4"
@@ -20,7 +26,7 @@ const TabOne = () => {
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 shrink-0 text-gray-500"
+                className="h-5 w-5 shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -33,7 +39,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
+              <span className="hidden md:block text-sm font-medium">
                 {' '}
                 Settings{' '}
               </span>
@@ -41,7 +47,13 @@ const TabOne = () => {
           </a>
         </li>
 
-        <li className="flex-1">
+        <li
+          className={`flex-1 ${
+            isActive === 'messages'
+              ? 'text-primary-600'
+              : 'text-gray-900 dark:text-gray-200'
+          }`}
+        >
           <a
             onClick={() => setIsActive('messages')}
             className="relative block p-4"
@@ -55,7 +67,7 @@ const TabOne = () => {
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 shrink-0 text-gray-500"
+                className="h-5 w-5 shrink-0 "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -68,15 +80,20 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
-                {' '}
-                Messages{' '}
+              <span className="hidden md:block text-sm font-medium">
+                Messages
               </span>
             </div>
           </a>
         </li>
 
-        <li className="flex-1">
+        <li
+          className={`flex-1 ${
+            isActive === 'archive'
+              ? 'text-primary-600'
+              : 'text-gray-900 dark:text-gray-200'
+          }`}
+        >
           <a
             onClick={() => setIsActive('archive')}
             className="relative block p-4"
@@ -90,7 +107,7 @@ const TabOne = () => {
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 shrink-0 text-gray-500"
+                className="h-5 w-5 shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -103,7 +120,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
+              <span className="hidden md:block text-sm font-medium">
                 {' '}
                 Archive{' '}
               </span>
@@ -111,7 +128,13 @@ const TabOne = () => {
           </a>
         </li>
 
-        <li className="flex-1">
+        <li
+          className={`flex-1 ${
+            isActive === 'notifications'
+              ? 'text-primary-600'
+              : 'text-gray-900 dark:text-gray-200'
+          }`}
+        >
           <a
             onClick={() => setIsActive('notifications')}
             className="relative block p-4"
@@ -127,7 +150,7 @@ const TabOne = () => {
             <div className="flex items-center justify-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 shrink-0 text-gray-500"
+                className="h-5 w-5 shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -140,7 +163,7 @@ const TabOne = () => {
                 />
               </svg>
 
-              <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-gray-200">
+              <span className="hidden md:block text-sm font-medium ">
                 {' '}
                 Notifications{' '}
               </span>
