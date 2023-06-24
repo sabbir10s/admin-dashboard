@@ -17,7 +17,7 @@ export default function ErrorPage() {
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link to="/">
             {' '}
-            <ButtonFill title="Go back home" />
+            <ButtonFill>Go back home</ButtonFill>
           </Link>
           <a href="#f" className="text-sm font-semibold text-gray-900">
             Contact support <span aria-hidden="true">&rarr;</span>
