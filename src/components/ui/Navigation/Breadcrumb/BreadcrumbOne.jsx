@@ -3,9 +3,12 @@ import React from 'react';
 const BreadcrumbOne = () => {
   return (
     <nav aria-label="Breadcrumb">
-      <ol className="flex items-center gap-1 text-sm text-gray-600">
+      <ol className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-300">
         <li>
-          <a href="#s" className="block transition hover:text-gray-700">
+          <a
+            href="#s"
+            className="block transition hover:text-gray-700 dark:hover:text-gray-500"
+          >
             <span className="sr-only"> Home </span>
 
             <svg
@@ -41,7 +44,10 @@ const BreadcrumbOne = () => {
         </li>
 
         <li>
-          <a href="#a" className="block transition hover:text-gray-700">
+          <a
+            href="#a"
+            className="block transition hover:text-gray-700 dark:hover:text-gray-500"
+          >
             {' '}
             Shirts{' '}
           </a>
@@ -63,7 +69,10 @@ const BreadcrumbOne = () => {
         </li>
 
         <li>
-          <a href="#a" className="block transition hover:text-gray-700">
+          <a
+            href="#a"
+            className="block transition hover:text-gray-700 dark:hover:text-gray-500"
+          >
             {' '}
             Plain Tee{' '}
           </a>

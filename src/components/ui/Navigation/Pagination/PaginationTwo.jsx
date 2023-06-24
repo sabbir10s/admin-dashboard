@@ -8,7 +8,7 @@ const PaginationTwo = () => {
         aria-label="Pagination"
       >
         <a
-          className="flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
+          className="flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-200 bg-white dark:bg-gray-700 dark:text-gray-200 text-black hover:border-gray-300"
           href="#a"
           title="Previous Page"
         >
@@ -23,14 +23,14 @@ const PaginationTwo = () => {
           </svg>
         </a>
         <a
-          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
+          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white dark:bg-gray-700 dark:text-gray-200 text-black hover:border-gray-300"
           href="#b"
           title="Page 1"
         >
           1
         </a>
         <a
-          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
+          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white dark:bg-gray-700 dark:text-gray-200 text-black hover:border-gray-300"
           href="#a"
           title="Page 2"
         >
@@ -45,21 +45,21 @@ const PaginationTwo = () => {
           3
         </a>
         <a
-          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
+          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white dark:bg-gray-700 dark:text-gray-200 text-black hover:border-gray-300"
           href="#a"
           title="Page 4"
         >
           4
         </a>
         <a
-          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
+          className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white dark:bg-gray-700 dark:text-gray-200 text-black hover:border-gray-300"
           href="#b"
           title="Page 5"
         >
           5
         </a>
         <a
-          className="flex w-10 h-10 ml-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
+          className="flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-200 bg-white dark:bg-gray-700 dark:text-gray-200 text-black hover:border-gray-300"
           href="#a"
           title="Next Page"
         >
