@@ -79,7 +79,7 @@ const TablePagination = ({ setProducts, products }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200 dark:divide-gray-500">
                   {currentItems.map((product, index) => (
                     <tr
                       key={product._id}
