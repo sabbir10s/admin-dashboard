@@ -22,67 +22,70 @@ const TablePagination = ({ setProducts, products }) => {
 
   return (
     <div>
-      <div className="bg-white border-[1px] border-gray-200/80 rounded-[10px] shadow-custom">
+      <div className="bg-white dark:bg-gray-700 border-[1px] border-gray-200/80 dark:border-gray-600 rounded-[10px] shadow-custom">
         <div className="overflow-x-auto">
           <div className="align-middle inline-block min-w-full">
-            <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
+            <div className="shadow overflow-hidden border-b border-gray-200 dark:border-gray-600 sm:rounded-lg">
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-500">
+                <thead className="bg-gray-50 dark:bg-gray-900 dark:text-gray-300">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Product
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Category
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Price
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Sale Price
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Stock
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Status
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Published
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
                     >
                       Action
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {currentItems.map((product, index) => (
-                    <tr key={product._id} className="hover:bg-gray-50">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 flex items-center gap-2">
+                    <tr
+                      key={product._id}
+                      className="hover:bg-gray-50 dark:hover:bg-gray-600/50"
+                    >
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-300 flex items-center gap-2">
                         <img
                           className="w-8 h-8 rounded-full hidden md:block"
                           src={product.picture}
@@ -90,19 +93,19 @@ const TablePagination = ({ setProducts, products }) => {
                         />
                         <span>{product.name}</span>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 capitalize">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 capitalize">
                         {product.category}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 capitalize">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 capitalize">
                         {product.price}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 capitalize font-semibold">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300 capitalize font-semibold">
                         {product.sale_price}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 capitalize font-semibold">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300 capitalize font-semibold">
                         {product.stock}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 capitalize">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 capitalize">
                         {product.selling && (
                           <span className="bg-success-100 text-success-500 text-[14px] px-[6px] py-[1px] rounded-full">
                             selling
@@ -114,10 +117,10 @@ const TablePagination = ({ setProducts, products }) => {
                           </span>
                         )}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 capitalize">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 capitalize">
                         <button
                           className={`relative inline-flex items-center h-4 rounded-full w-8 focus:outline-none ${
-                            product.isOn ? 'bg-success-500' : 'bg-gray-200'
+                            product.isOn ? 'bg-primary-500' : 'bg-gray-300'
                           }`}
                           onClick={() => toggle(index)}
                         >
@@ -190,7 +193,7 @@ const TablePagination = ({ setProducts, products }) => {
             </div>
           </div>
         </div>
-        <div className="text-gray-900 flex flex-col md:flex-row gap-6 justify-between items-center w-full pl-[15px] pr-[30px] py-6 text-sm">
+        <div className="text-gray-900 dark:text-gray-300 flex flex-col md:flex-row gap-6 justify-between items-center w-full pl-[15px] pr-[30px] py-6 text-sm">
           <p className="uppercase font-semibold">
             showing ({itemsOffset + 1}- {itemsOffset + currentItems.length}) of{' '}
             {products.length}
