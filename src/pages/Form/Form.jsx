@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
 import Checkbox from '../../components/ui/Form/Checkbox/Checkbox';
+import MyDatePicker from '../../components/ui/Form/DatePicker/MyDatePicker';
 import FileUpload from '../../components/ui/Form/FileUpload/FileUpload';
 import InputField from '../../components/ui/Form/InputField/InputField';
 import MultipleSelect from '../../components/ui/Form/MultipleSelect/MultipleSelect';
@@ -51,6 +52,12 @@ const Form = () => {
           Multiple select
         </h2>
         <MultipleSelect />
+      </div>
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold leading-7 text-primary-600">
+          Date Picker
+        </h2>
+        <MyDatePicker />
       </div>
 
       {/* Form */}
