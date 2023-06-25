@@ -10,15 +10,15 @@ const Layout = () => {
     setSidebar(!sidebar);
   };
   return (
-    <main className="flex bg-[#f9fafb] dark:bg-[#1a1c23]">
+    <main className="flex bg-[#f9fafb] dark:bg-[#1a1c23] w-full">
       {sidebar && (
-        <div className="hidden lg:block w-72">
+        <div className="hidden lg:block w-64">
           <Sidebar />
         </div>
       )}
       <div className="w-full">
         <Navbar handleSidebar={handleSidebar} />
-        <main className="bg-white dark:bg-[#121317] shadow w-full p-6 min-h-screen rounded-lg">
+        <main className="bg-white dark:bg-[#121317] shadow p-6 min-h-screen rounded-lg">
           <Outlet />
         </main>
       </div>
