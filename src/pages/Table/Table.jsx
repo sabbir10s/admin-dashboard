@@ -22,6 +22,10 @@ const Table = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
+  if (!products) {
+    return <>Loading</>;
+  }
   return (
     <div className="space-y-12">
       <div>
