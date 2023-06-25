@@ -12,7 +12,7 @@ const Layout = () => {
   return (
     <main className="flex bg-[#f9fafb] dark:bg-[#1a1c23]">
       {sidebar && (
-        <div className="hidden lg:block w-72">
+        <div className="hidden lg:block w-64">
           <Sidebar />
         </div>
       )}
