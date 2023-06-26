@@ -45,7 +45,7 @@ const Navbar = ({ handleSidebar }) => {
   }, [isDarkMode]);
   return (
     <div className="p-6 flex justify-between">
-      <button className="hidden lg:block" onClick={handleSidebar}>
+      <button className="hidden xl:block" onClick={handleSidebar}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -62,7 +62,7 @@ const Navbar = ({ handleSidebar }) => {
         </svg>
       </button>
       <button
-        className="block lg:hidden"
+        className="block xl:hidden"
         onClick={() => setMobileSidebar(true)}
       >
         <svg
