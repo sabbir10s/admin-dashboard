@@ -18,6 +18,7 @@ const Card = lazy(() => import('../pages/Card/Card'));
 const Carts = lazy(() => import('../pages/Carts/Carts'));
 const Checkout = lazy(() => import('../pages/Checkout/Checkout'));
 const Filter = lazy(() => import('../pages/Filter/Filter'));
+const Chart = lazy(() => import('../pages/Chart/Chart'));
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: '/card',
         element: <Card />,
+      },
+      {
+        path: '/chart',
+        element: <Chart />,
       },
       {
         path: '/filter',
