@@ -96,6 +96,11 @@ const Sidebar = ({ handleMobileSidebar }) => {
           </ActiveLink>
         </li>
         <li>
+          <ActiveLink onClick={handleMobileSidebar} to="/filter">
+            Filter
+          </ActiveLink>
+        </li>
+        <li>
           <ActiveLink onClick={handleMobileSidebar} to="/faq">
             FAQ
           </ActiveLink>

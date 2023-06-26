@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ButtonFill, ButtonOutline } from '../../components/ui/Button/Button';
 import Checkbox from '../../components/ui/Form/Checkbox/Checkbox';
 import MyDatePicker from '../../components/ui/Form/DatePicker/MyDatePicker';
+import StartEndDate from '../../components/ui/Form/DatePicker/StartEndDate';
 import FileUpload from '../../components/ui/Form/FileUpload/FileUpload';
 import InputField from '../../components/ui/Form/InputField/InputField';
 import MultipleSelect from '../../components/ui/Form/MultipleSelect/MultipleSelect';
@@ -58,6 +59,7 @@ const Form = () => {
           Date Picker
         </h2>
         <MyDatePicker />
+        <StartEndDate />
       </div>
 
       {/* Form */}
