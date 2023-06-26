@@ -36,9 +36,9 @@ const Sidebar = ({ handleMobileSidebar }) => {
           </ActiveLink>
         </li>
         <li>
-          <ActiveLink onClick={handleMobileSidebar} to="/chart">
+          {/* <ActiveLink onClick={handleMobileSidebar} to="/chart">
             Chart
-          </ActiveLink>
+          </ActiveLink> */}
         </li>
         <li>
           <ActiveLink onClick={handleMobileSidebar} to="/form">

@@ -15,7 +15,9 @@ const StartEndDate = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-lg font-bold mb-2">Select Date Range:</h2>
+      <h2 className="text-sm font-bold mb-2 dark:text-gray-400">
+        Select Date Range:
+      </h2>
       <div className="flex space-x-4">
         <DatePicker
           selected={startDate}
