@@ -5,7 +5,7 @@ const ProductCardOne = ({ productInfo }) => {
 
   const { name, image, price } = productInfo;
   return (
-    <div className="bg-white dark:bg-gray-800 border border-gray-100 shadow w-full  max-w-xs">
+    <div className="bg-white dark:bg-gray-800 border border-gray-100 shadow w-full">
       <a href="#s" className="group relative block overflow-hidden">
         <button
           onClick={() => setWishlist(!wishlist)}

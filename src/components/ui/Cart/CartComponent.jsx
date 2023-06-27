@@ -80,6 +80,7 @@ const CartComponent = () => {
                       </div>
                     </div>
                   </li>
+
                   <li className="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
                     <div className="shrink-0">
                       <img
