@@ -1,203 +1,148 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import StarRating from '../../common/StarRating/StarRating';
+import QuantityInput from '../Elements/QuantityInput/QuantityInput';
+import Select from '../Form/Select/Select';
+const cartItem = [
+  {
+    _id: 1,
+    name: 'Coffee-Mate Coffee Creamer',
+    price: 100,
+    del_price: 20,
+    rating: 4.5,
+    review: 100,
+    discount: 20,
+    stock: true,
+    image: 'https://i.ibb.co/5FcjfPQ/product.png',
+  },
+  {
+    _id: 2,
+    name: 'Coffee-Mate Coffee Creamer',
+    price: 100,
+    del_price: 20,
+    rating: 4.5,
+    review: 100,
+    discount: 20,
+    stock: false,
+    image: 'https://i.ibb.co/5FcjfPQ/product.png',
+  },
+];
 const CartComponent = () => {
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const options = [
+    { value: '1', label: '1' },
+    { value: '2', label: '2' },
+    { value: '3', label: '3' },
+    { value: '4', label: '4' },
+  ];
+
+  const handleSelectChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <div>
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center">
-          <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-            Your Cart
-          </h1>
+      <div className="border-b pb-12 dark:border-b-gray-500">
+        <h1 className="text-gray-900 dark:text-white text-4xl font-semibold mb-4">
+          Shopping Cart
+        </h1>
+        <div className="text-gray-700 dark:text-gray-400 space-x-1">
+          <a href="#home">Homepage</a>
+          <span>/</span>
+          <a href="#home">Clothing Categories</a>
+          <span>/</span>
+          <a href="#home" className=" underline">
+            Shopping Cart
+          </a>
         </div>
+      </div>
 
-        <div className="mx-auto mt-8 max-w-2xl md:mt-12">
-          <div className="bg-white dark:bg-gray-700 shadow">
-            <div className="px-4 py-6 sm:px-8 sm:py-10">
-              <div className="flow-root">
-                <ul className="-my-8">
-                  <li className="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
-                    <div className="shrink-0">
-                      <img
-                        className="h-24 w-24 max-w-full rounded-lg object-cover"
-                        src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60?a=b"
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="relative flex flex-1 flex-col justify-between">
-                      <div className="sm:col-gap-5 sm:grid sm:grid-cols-2">
-                        <div className="pr-8 sm:pr-5">
-                          <p className="text-base font-semibold text-gray-900 dark:text-white">
-                            Nike Air Max 2019
-                          </p>
-                          <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">
-                            36EU - 4US
-                          </p>
-                        </div>
-
-                        <div className="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
-                          <p className="shrink-0 w-20 text-base font-semibold text-gray-900 dark:text-white sm:order-2 sm:ml-8 sm:text-right">
-                            $259.00
-                          </p>
-
-                          <div className="sm:order-1">
-                            <div className="mx-auto flex h-8 items-stretch text-gray-600 dark:text-gray-300">
-                              <button className="flex items-center justify-center rounded-l-md bg-gray-200 dark:bg-gray-800/50 dark:hover:bg-gray-800 px-4 transition hover:bg-gray-400 hover:text-white">
-                                -
-                              </button>
-                              <div className="flex w-full items-center justify-center bg-gray-100 dark:bg-gray-600 dark:text-white px-4 text-xs uppercase transition">
-                                1
-                              </div>
-                              <button className="flex items-center justify-center rounded-r-md bg-gray-200 dark:bg-gray-800/50 dark:hover:bg-gray-800 px-4 transition hover:bg-gray-400 hover:text-white">
-                                +
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="absolute top-0 right-0 flex sm:bottom-0 sm:top-auto">
-                        <button
-                          type="button"
-                          className="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900 dark:text-white"
-                        >
-                          <svg
-                            className="h-5 w-5"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M6 18L18 6M6 6l12 12"
-                              className=""
-                            ></path>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li className="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
-                    <div className="shrink-0">
-                      <img
-                        className="h-24 w-24 max-w-full rounded-lg object-cover"
-                        src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="relative flex flex-1 flex-col justify-between">
-                      <div className="sm:col-gap-5 sm:grid sm:grid-cols-2">
-                        <div className="pr-8 sm:pr-5">
-                          <p className="text-base font-semibold text-gray-900 dark:text-white">
-                            Nike Air Max 2019
-                          </p>
-                          <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">
-                            36EU - 4US
-                          </p>
-                        </div>
-
-                        <div className="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
-                          <p className="shrink-0 w-20 text-base font-semibold text-gray-900 dark:text-white sm:order-2 sm:ml-8 sm:text-right">
-                            $259.00
-                          </p>
-
-                          <div className="sm:order-1">
-                            <div className="mx-auto flex h-8 items-stretch text-gray-600 dark:text-gray-300">
-                              <button className="flex items-center justify-center rounded-l-md bg-gray-200 dark:bg-gray-800/50 dark:hover:bg-gray-800 px-4 transition hover:bg-gray-400 hover:text-white">
-                                -
-                              </button>
-                              <div className="flex w-full items-center justify-center bg-gray-100 dark:bg-gray-600 dark:text-white px-4 text-xs uppercase transition">
-                                1
-                              </div>
-                              <button className="flex items-center justify-center rounded-r-md bg-gray-200 dark:bg-gray-800/50 dark:hover:bg-gray-800 px-4 transition hover:bg-gray-400 hover:text-white">
-                                +
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="absolute top-0 right-0 flex sm:bottom-0 sm:top-auto">
-                        <button
-                          type="button"
-                          className="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900 dark:text-white"
-                        >
-                          <svg
-                            className="block h-5 w-5"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M6 18L18 6M6 6l12 12"
-                              className=""
-                            ></path>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mt-6 border-t border-b py-2">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm text-gray-400">Subtotal</p>
-                  <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                    $399.00
-                  </p>
+      <div>
+        {cartItem.map((item) => (
+          <div
+            className="mt-12 border-b pb-8 dark:border-b-gray-500 flex items-start gap-6"
+            key={item._id}
+          >
+            <div className="inline-block w-[150px] h-[130px] bg-gray-200 rounded-lg">
+              <img
+                className="w-full h-full object-cover object-center"
+                src={item.image}
+                alt=""
+              />
+            </div>
+            <div className="w-full space-y-3 lg:space-y-5">
+              <div className="flex flex-col md:flex-row items-start justify-between">
+                <div className="w-full">
+                  <p className="dark:text-gray-200">{item.name}</p>
+                  <div>
+                    <StarRating rating={item.rating} starSize={5} />
+                  </div>
                 </div>
-                <div className="flex items-center justify-between">
-                  <p className="text-sm text-gray-400">Shipping</p>
-                  <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                    $8.00
-                  </p>
-                </div>
-              </div>
-              <div className="mt-6 flex items-center justify-between">
-                <p className="text-sm font-medium text-gray-900 dark:text-white">
-                  Total
-                </p>
-                <p className="text-2xl font-semibold text-gray-900 dark:text-white">
-                  <span className="text-xs font-normal text-gray-400">USD</span>{' '}
-                  408.00
-                </p>
-              </div>
-
-              <div className="mt-6 text-center">
-                <button
-                  type="button"
-                  className="group inline-flex w-full items-center justify-center rounded-md bg-primary-600 px-6 py-4 text-lg font-semibold text-white transition-all duration-200 ease-in-out focus:shadow hover:bg-primary-500"
-                >
-                  Checkout
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="group-hover:ml-8 ml-4 h-6 w-6 transition-all"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                <div className="flex items-center justify-between w-full mt-2 md:mt-0">
+                  <div className="hidden md:block">
+                    <QuantityInput />
+                  </div>
+                  <div className="block md:hidden">
+                    <Select
+                      className="w-12 space-x-4 py-1 text-sm"
+                      options={options}
+                      value={selectedOption}
+                      onChange={handleSelectChange}
                     />
-                  </svg>
+                  </div>
+                  <p className="border-[2px] border-primary-400 text-primary-400 px-2 rounded-lg">
+                    ${item.price}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                {item.stock && (
+                  <div className="flex items-center gap-1 text-gray-600 dark:text-gray-300 border px-1.5 py-0.5 rounded-full text-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-4 h-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12.75l6 6 9-13.5"
+                      />
+                    </svg>
+                    <span>In Stock</span>
+                  </div>
+                )}
+                {!item.stock && (
+                  <div className="flex items-center gap-1 text-gray-600 dark:text-gray-300 border px-1.5 py-0.5 rounded-full text-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-4 h-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+                      />
+                    </svg>
+
+                    <span>Sold Out</span>
+                  </div>
+                )}
+                <button className="text-red-400 hover:text-red-600 duration-300">
+                  Remove
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

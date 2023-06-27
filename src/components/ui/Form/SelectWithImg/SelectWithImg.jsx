@@ -68,7 +68,7 @@ const SelectWithImg = () => {
             <Listbox.Label className="block text-sm font-medium leading-6 text-gray-900 ">
               Assigned to
             </Listbox.Label>
-            <div className="relative mt-2 w-64">
+            <div className="relative w-64">
               <Listbox.Button className="appearance-none block w-64 rounded-md border-[1px] border-gray-100 dark:border-gray-700 dark:focus:border-gray-300 p-3 dark:text-white bg-[#f4f5f7] dark:bg-[#24262d] focus:bg-white placeholder:text-gray-400 sm:text-sm sm:leading-6 outline-none duration-300">
                 <span className="flex items-center">
                   <img
