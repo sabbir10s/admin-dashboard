@@ -1,10 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 import { cartItem } from '../../shared/Data/Data';
 import { ButtonFill } from '../Button/Button';
 import CartItemCard from './CartItemCard';
 
 const CartComponent = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate('/checkout');
+  };
   return (
     <div>
       <div className="border-b pb-4 md:pb-8 xl:pb-12 dark:border-b-gray-500">
@@ -53,7 +59,10 @@ const CartComponent = () => {
             <span className="font-semibold text-base md:text-lg">$5.00</span>
           </div>
           <div className="flex justify-end w-full">
-            <ButtonFill className="w-full md:w-64 xl:w-full rounded-full mt-4 text-lg">
+            <ButtonFill
+              onClick={handleNavigate}
+              className="w-full md:w-64 xl:w-full rounded-full mt-4 text-lg"
+            >
               Checkout
             </ButtonFill>
           </div>
