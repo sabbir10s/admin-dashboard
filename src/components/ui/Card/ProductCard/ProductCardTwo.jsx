@@ -5,7 +5,7 @@ import StarRating from '../../../common/StarRating/StarRating';
 const ProductCardTwo = ({ productInfo }) => {
   const { name, price, discount, image, rating } = productInfo;
   return (
-    <div className="relative flex w-full max-w-xs flex-col overflow-hidden rounded-lg border dark:bg-gray-800 border-gray-100 bg-white shadow-md">
+    <div className="relative flex w-full flex-col overflow-hidden rounded-lg border dark:bg-gray-800 border-gray-100 bg-white shadow-md">
       <a
         className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl"
         href="#s"

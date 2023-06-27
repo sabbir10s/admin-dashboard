@@ -21,14 +21,14 @@ const productInfo = {
 const ProductCard = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10 space-y-4 lg:space-y-0">
-        <div className="xl:w-[350px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-10 ">
+        <div>
           <ProductCardOne productInfo={productInfo} />
         </div>
-        <div className="xl:w-[350px]">
+        <div>
           <ProductCardTwo productInfo={productInfo} />
         </div>
-        <div className="xl:w-[350px]">
+        <div>
           <ProductCardThree productInfo={productInfo} />
         </div>
       </div>

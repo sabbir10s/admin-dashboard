@@ -4,7 +4,7 @@ const ProductCardThree = ({ productInfo }) => {
   const { name, price, discount, image, imageTwo } = productInfo;
   return (
     <div>
-      <div className="group border-gray-100/30 flex w-full max-w-xs flex-col self-center overflow-hidden rounded-lg border dark:bg-gray-700 shadow-md">
+      <div className="group border-gray-100/30 flex w-full flex-col self-center overflow-hidden rounded-lg border dark:bg-gray-700 shadow-md">
         <a
           className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl"
           href="#s"

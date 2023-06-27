@@ -17,11 +17,11 @@ const blog = {
 };
 const BlogCard = () => {
   return (
-    <div className="md:flex gap-10">
-      <div className="w-[350px]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+      <div>
         <BlogCardOne blog={blog} />
       </div>
-      <div className="w-[350px]">
+      <div>
         <BlogCardTwo blog={blog} />
       </div>
     </div>
