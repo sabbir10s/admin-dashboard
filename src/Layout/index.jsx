@@ -18,7 +18,7 @@ const Layout = () => {
       )}
       <div className="w-full">
         <Navbar handleSidebar={handleSidebar} />
-        <main className="bg-white dark:bg-[#121317] shadow p-6 min-h-screen rounded-lg">
+        <main className="bg-white dark:bg-[#121317] shadow p-2 md:p-3 lg:p-6 min-h-screen rounded-lg">
           <Outlet />
         </main>
       </div>
