@@ -30,8 +30,8 @@ const faqData = [
 ];
 const FaqComponent = () => {
   return (
-    <div className="relative mx-auto w-full py-16 px-5 dark:bg-gray-800 font-sans text-gray-800 dark:text-gray-400 sm:px-20 md:max-w-screen-lg lg:py-24">
-      <h2 className="mb-5 text-center font-sans text-4xl sm:text-5xl font-bold">
+    <div className="relative mx-auto w-full py-16 font-sans sm:px-20 md:max-w-screen-lg lg:py-24">
+      <h2 className="mb-5 text-center font-sans text-4xl sm:text-5xl font-bold dark:text-gray-200">
         Frequently asked Questions
       </h2>
       <p className="mb-12 text-center text-lg text-gray-600 dark:text-gray-400">

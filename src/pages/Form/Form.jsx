@@ -96,13 +96,23 @@ const Form = () => {
             />
           </div>
           {/* select options */}
-          <Select
-            options={options}
-            value={selectedOption}
-            onChange={handleSelectChange}
-          />
-
-          <SelectWithImg />
+          <div>
+            <h2 className="text-sm font-medium mb-4 text-gray-700 dark:text-white">
+              Select options
+            </h2>
+            <Select
+              className="w-64"
+              options={options}
+              value={selectedOption}
+              onChange={handleSelectChange}
+            />
+          </div>
+          <div>
+            <h2 className="text-sm font-medium text-gray-700 dark:text-white">
+              Select options with image
+            </h2>
+            <SelectWithImg />
+          </div>
 
           <TextArea
             cols={10}

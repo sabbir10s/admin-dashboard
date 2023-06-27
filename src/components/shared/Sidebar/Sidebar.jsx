@@ -8,7 +8,7 @@ const Sidebar = ({ handleMobileSidebar }) => {
   return (
     <div className="pl-10 relative">
       <button
-        className="block lg:hidden absolute top-4 right-4 bg-black text-white p-1 rounded-full"
+        className="block xl:hidden absolute top-4 right-4 bg-black dark:bg-gray-700 text-white p-1 rounded-full"
         onClick={handleMobileSidebar}
       >
         <svg
